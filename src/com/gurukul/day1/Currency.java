@@ -11,7 +11,7 @@ public class Currency {
 		Scanner sc = new Scanner(System.in);
 		amount = sc.nextInt();
 		int twoThousand = amount/2000;
-		//Finding remainder and storing it in amount because amt wont be needed in the future
+		//Finding remainder and storing it in amount because amount wont be needed in the future
 		amount = amount%2000; 
 		int fiveHundred = amount/500;
 		amount = amount%500;
