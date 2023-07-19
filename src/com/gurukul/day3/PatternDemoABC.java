@@ -11,8 +11,7 @@ public class PatternDemoABC {
 			for(int j=10-2*i;j>=1;j--)		
 				System.out.print("  ");
 			for(int j=i;j>=1;j--)
-				System.out.print((char)(j+64)+" "
-						+ "");
+				System.out.print((char)(j+64)+" ");
 			System.out.println();
 		}
 	}

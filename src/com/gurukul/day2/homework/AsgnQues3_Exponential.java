@@ -12,12 +12,12 @@ public class AsgnQues3_Exponential {
 		System.out.println("Enter a number ");
 		Scanner sc = new Scanner(System.in);
 		x = sc.nextDouble();
-		double num=x;
+		
 		double f = 1;
 		for(i=1;i<=10;i++)
 		{
 			f = f * i;
-			sum = sum + Math.pow(num, i)/f;
+			sum = sum + Math.pow(x, i)/f;
 		}
 		System.out.println(sum);
 		System.out.println(Math.exp(x));

@@ -27,6 +27,21 @@ public class AsgnQues6_FibonacciInBound {
 			if(fib>upper)
 				break;
 		}
+		
+		/*    
+		  f = 0;
+		  s = 1;
+		  t = 1;
+		  for(;t<=upper;)
+		  {
+		  	t = s +f;
+		  	if(t>=lower)
+		  		sout(t);
+		  	f=s;
+		  	s=t;
+		  }
+		 
+		 */
 	}
 
 }
