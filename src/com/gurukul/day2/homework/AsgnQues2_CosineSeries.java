@@ -10,9 +10,9 @@ public class AsgnQues2_CosineSeries {
 		Scanner sc = new Scanner(System.in);
 		double x = sc.nextDouble();
 		x = Math.toRadians(x);
-		double num = x;
+		double num = -(Math.pow(x, 2));
 		double i;
-		double sum = 0;
+		double sum = 1;
 		double f = 1;
 		for(i=1;i<20;i++)
 		{
@@ -25,6 +25,7 @@ public class AsgnQues2_CosineSeries {
 			}
 		}
 		System.out.println(sum);
+		
 		System.out.println(Math.cos(x));
 	}
 
