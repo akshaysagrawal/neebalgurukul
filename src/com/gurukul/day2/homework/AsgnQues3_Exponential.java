@@ -8,7 +8,7 @@ public class AsgnQues3_Exponential {
 		// TODO Auto-generated method stub
 		double i;
 		double x;
-		double sum = 0;
+		double sum = 1;
 		System.out.println("Enter a number ");
 		Scanner sc = new Scanner(System.in);
 		x = sc.nextDouble();
@@ -19,7 +19,6 @@ public class AsgnQues3_Exponential {
 			f = f * i;
 			sum = sum + Math.pow(num, i)/f;
 		}
-		sum = 1+ sum;
 		System.out.println(sum);
 		System.out.println(Math.exp(x));
 	}
