@@ -10,14 +10,14 @@ public class Asgn3Ques1_DiamondPattern {
 				System.out.print(" ");
 			for(int j=1;j<=i;j++)
 			{
-				if(j==1 || i==1)
+				if(j==1)
 					System.out.print("*");
 				else
 					System.out.print(" ");
 			}
 			for(int j=i-1;j>=1;j--)
 			{
-				if(j==1 || i==1)
+				if(j==1)
 					System.out.print("*");
 				else
 					System.out.print(" ");
@@ -31,14 +31,14 @@ public class Asgn3Ques1_DiamondPattern {
 				System.out.print(" ");
 			for(int j=1;j<=i;j++)
 			{
-				if(j==1 || i==1)
+				if(j==1)
 					System.out.print("*");
 				else
 					System.out.print(" ");
 			}
 			for(int j=i-1;j>=1;j--)
 			{
-				if(j==1 || i==1)
+				if(j==1)
 					System.out.print("*");
 				else
 					System.out.print(" ");

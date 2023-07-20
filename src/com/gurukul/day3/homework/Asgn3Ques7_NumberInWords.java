@@ -9,53 +9,53 @@ public class Asgn3Ques7_NumberInWords {
 		System.out.println("Enter a number");
 		Scanner sc = new Scanner(System.in);
 		int y = sc.nextInt();
-		int s =0;
-		int sum =0;
+		int s;
 		String w="";
+//		while(y!=0)
+//		{
+//			sum = (sum * 10)+(y%10);
+//			y = y/10;
+//		}
 		while(y!=0)
 		{
-			sum = (sum * 10)+(y%10);
+			s = y%10;
 			y = y/10;
-		}
-		while(sum!=0)
-		{
-			s = sum%10;
-			sum = sum/10;
 			switch(s)
 			{
 			case 1:
-				w = "one";
+				w = "one "+w;
 				break;
 			case 2:
-				w = "two";
+				w = "two "+w;
 				break;
 			case 3:
-				w = "three";
+				w = "three "+w;
 				break;
 			case 4:
-				w = "four";
+				w = "four "+w;
 				break;
 			case 5:
-				w = "five";
+				w = "five "+w;
 				break;
 			case 6:
-				w = "six";
+				w = "six "+w;
 				break;
 			case 7:
-				w = "seven";
+				w = "seven "+w;
 				break;
 			case 8:
-				w = "eight";
+				w = "eight "+w;
 				break;
 			case 9:
-				w = "nine";
+				w = "nine "+w;
 				break;
 			case 0:
-				w = "zero";
+				w = "zero "+w;
 				break;
 			}
-			System.out.print(w+" ");
+			
 		}
+		System.out.print(w);
 	}
 
 }
