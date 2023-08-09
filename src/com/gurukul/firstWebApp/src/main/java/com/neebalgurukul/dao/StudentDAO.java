@@ -150,4 +150,27 @@ public class StudentDAO {
 	}
 	return true;
     }
+    
+    public void updateEmail(int id, String email) throws IdNotExist, SQLException
+    {
+	    	String query = "update students set email=? where id=?";
+	    	conn = ds.getConnection();
+	    	try {
+	    	    PreparedStatement pstmt = conn.prepareStatement(query);
+	    	    pstmt.setString(1, email);
+	    	    pstmt.setInt(2, id);
+
+	    	    int i = pstmt.executeUpdate();
+	    	    if (i != 0) {
+	    		System.out.println("Email of " + id + " is changed to " + email);
+	    	    } else {
+	    		throw new IdNotExist("No record found");
+	    	    }
+	    	} catch (SQLException e) {
+	    	    System.out.println("SQLException: " + e.getMessage());
+	    	} finally {
+	    	    conn.close();
+	    	}
+	        
+    }
 }

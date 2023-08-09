@@ -26,7 +26,7 @@ public class DataSource {
     
 	public Connection getConnection() {
         	try {
-        	    conn =DriverManager.getConnection("jdbc:mysql://localhost:3306/studentproject",this.username,this.password);
+        	    conn =DriverManager.getConnection("jdbc:mysql://localhost:3306/company_db",this.username,this.password);
         
         	    // Do something with the Connection   
         	} catch (SQLException ex) {
