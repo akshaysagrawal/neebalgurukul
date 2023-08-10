@@ -7,6 +7,20 @@ public class Student {
     private String email;
     private String course;
     private int age;
+   
+    public Student(String name, String email, String course, int age) {
+	super();
+	// this.id = id;
+	this.name = name;
+	this.email = email;
+	this.course = course;
+	this.age = age;
+    }
+    
+    public Student() {
+	// TODO Auto-generated constructor stub
+    }
+
     public String getName() {
         return name;
     }

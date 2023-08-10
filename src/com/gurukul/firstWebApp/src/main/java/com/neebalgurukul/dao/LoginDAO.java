@@ -76,7 +76,7 @@ public class LoginDAO {
 	}
     }
     
-    public boolean getLoginInsert(String username,String password, boolean active) throws Exception
+    public boolean getLoginInsert(String username,String password) throws Exception
     {
 	String query2 = "insert into login (username, password, lastModifiedDate, active) values (?,?,?,?)";
 	conn = ds.getConnection();
@@ -88,7 +88,7 @@ public class LoginDAO {
 	    pstmt.setString(1,username);
 	    pstmt.setString(2,password);
 	    pstmt.setDate(3,currentDate);
-	    pstmt.setBoolean(4, active);
+	    pstmt.setBoolean(4, true);
 	    int a = pstmt.executeUpdate();
 	    
 	    if(a!=0)
@@ -97,7 +97,7 @@ public class LoginDAO {
 		if(rs.next())
 		{
 		    int loginId = rs.getInt(a);
-		    System.out.println("Id = "+loginId);
+		    System.out.println("In login table record inserted successfuuly for Id = "+loginId);
 		}
 	    }
 	    else

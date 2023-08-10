@@ -80,7 +80,7 @@ public class StudentDAO {
 	    }
 	    return obj;
 	}catch(SQLException e) {
-	    System.out.println("SQLException in LoginDAO: "+e.getMessage());
+	    System.out.println("SQLException in StudentDAO: "+e.getMessage());
 	    return null;
 	}
 	finally {
@@ -109,7 +109,7 @@ public class StudentDAO {
 		if(rs.next())
 		{
 		    int loginId = rs.getInt(a);
-		    System.out.println("Inserted new Id = "+loginId);
+		    System.out.println("In Students table record inserted successfully for Id = "+loginId);
 		}
 	    }
 	    else
