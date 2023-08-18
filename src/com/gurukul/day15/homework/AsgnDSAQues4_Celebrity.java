@@ -52,7 +52,7 @@ public class AsgnDSAQues4_Celebrity {
 	hash.put("a", 0);
 	hash.put("b", 0);
 	hash.put("c", 0);
-	//hash.put("d", 0);
+
 	
 	List<Acquantainces> accList = new ArrayList<>();
 	accList.add(x);
