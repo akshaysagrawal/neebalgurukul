@@ -17,7 +17,7 @@ public class Asgn9Ques3_StringCompression {
 			if(a[i]==a[i+1])
 			{
 				count ++;
-				 String z =  x.replace(x, count);
+				 //String z =  x.replace(x, count);
 			}
 		}
 		
